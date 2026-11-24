@@ -1,0 +1,32 @@
+{
+  "name": "inkwrap",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Read PDF books on your phone without zooming: re-wraps the book's own typeset words to fit the screen.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "snap": "tsx tools/snap.ts",
+    "e2e": "tsx tools/e2e.ts",
+    "android": "vite build && cap sync android && cd android && ./gradlew assembleDebug"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.6.2",
+    "@capacitor/app": "^8.1.2",
+    "@capacitor/core": "^8.6.2",
+    "@embedpdf/pdfium": "^2.15.1",
+    "hyphen": "^1.14.1"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "^8.6.2",
+    "@types/node": "^26.6.6",
+    "playwright": "^1.65.1",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.8"
+  }
+}

@@ -1,0 +1,8 @@
+node_modules/
+dist/
+snaps/
+*.log
+.DS_Store
+# test books are copyrighted / large: keep them out of the repo
+test-pdfs/
+*.apk
